@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Barrierefreiheit auf einer Seite</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body onload="acSwitchCheck();">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Herzlich willkommen</span></a></li>
+        <li><a href="#screenreading" class="nav-link scrollto"><i class="bx bx-user-voice"></i> <span>Bildschirmlesen</span></a></li>
+        <li><a href="#definition" class="nav-link scrollto"><i class="bx bx-universal-access"></i> <span>Was ist Barrierefreiheit</span></a></li>
+        <li><a href="#reason" class="nav-link scrollto"><i class="bx bx-question-mark"></i> <span>Warum Barrierefreiheit</span></a></li>
+        <li><a href="#keynav" class="nav-link scrollto"><i class="bx bxs-keyboard"></i> <span>Tastaturnavigation</span></a></li>
+        <li><a href="#color" class="nav-link scrollto"><i class="bx bx-palette"></i> <span>Farbkontrastverhältnis</span></a></li>
+        <li><a href="#subtitle" class="nav-link scrollto"><i class="bx bx-captions"></i> <span>Untertitel</span></a></li>
+        <li><a href="#fontsize" class="nav-link scrollto"><i class="bx bx-font"></i> <span>Schriftgröße</span></a></li>
+        <li><a href="#cursor" class="nav-link scrollto"><i class="bx bx-mouse"></i> <span>Gut sichtbarer Cursor</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+    <div class="btn-toolbar d-flex justify-content-center fixed-top py-3 d-none" role="toolbar" id="actoolbar">
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acSkipSwitch()">
+          Navigationsleiste überspringen
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acSpeakSwitch()">
+          Sprachschalter
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acPbrSwitch()">
+          Sprachgeschwindigkeit
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acModeSwitch()">
+          Sprachmodus
+        </button>
+      </div>
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acColorSwitch()">
+          Farbe
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acFontSwitch()">
+          Schriftgröße
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acCCSwitch()">
+          Untertitel
+        </button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acCursorSwitch()">
+          Cursor-Stil
+        </button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" name="button" class="btn btn-primary" onclick="acDisplaySwitch()">
+          Barrierefreiheit
+        </button>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <div class="justify-content-center d-none bg-light fixed-bottom py-3" id="accc">
+    <p class="h2 text-center" id="cccontent"></p>
+  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Barrierefreiheit auf einer Seite</h1>
+      <p>Hallo! Herzlich Willkommen auf einer Seite zum Erlernen der Barrierefreiheit im Web. Sie können TAB / Shift + TAB auf Ihrer Tastatur oder Ihrem Cursor verwenden, um durch diese Seite zu navigieren.</p>
+      <p><span class="typed" data-typed-items="Zugänglichkeit, Seniorenfreundlichkeit, Bildschirmauslesung, Farbkontrastverhältnis"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <!-- ======= Hero Section - Speak switch ======= -->
+  <section id="screenreading" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Bildschirmlesen</h1>
+      <p>Es tut mir leid, Sie mit dieser Stimme in Aktion zu erschrecken, aber Sie werden sehr bald wissen, warum ich den Bildschirm lese.</p>
+      <p>Wenn Sie dies als störend empfinden, klicken Sie auf die Schaltfläche unten, um die Stimme auszuschalten.</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acSpeakSwitch()" style="width: auto; height: 80px; font-size: 30px;">
+          Sprachschalter
+        </button>
+      </div>
+      <p>Wenn Sie dies zu langsam finden, können Sie die Sprachgeschwindigkeit mit der Schaltfläche unten umschalten.</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acPbrSwitch()" style="width: auto; height: 80px; font-size: 30px;">
+          Sprachgeschwindigkeit
+        </button>
+      </div>
+      <p>Die Bildschirmlesefunktion basiert auf der Text-to-Speech-Technologie und liest alles vor, was auf der Website angezeigt wird.</p>
+      <p>Das Design des Leseteils wirkt sich direkt auf die Benutzererfahrung bei der Nutzung der Webseite aus. Wir entwickeln einen speziellen Leseschalter, um den Benutzern zu helfen, den Beginn und das Ende des Lesens frei zu wählen.</p>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section - Definition ======= -->
+  <section id="definition" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h2><strong>Was ist Barrierefreiheit</strong></h2>
+      <p>Im engsten Sinne ist Barrierefreiheit die Gestaltung von Produkten, Geräten, Dienstleistungen, Fahrzeugen oder Umgebungen, die für Menschen mit Behinderungen nutzbar sind. Das ist für den Moment eine ausreichende Definition.</p> 
+      <p>In der Nische der Web-Zugänglichkeit müssen wir über einige Details nachdenken. Auf dieser Webseite werde ich Sie durch einige der grundlegendsten Elemente der Barrierefreiheit im Internet führen.</p>
+    </div>
+  </section><!-- End Hero -->
+    <!-- ======= Hero Section - Definition ======= -->
+    <section id="reason" class="d-flex flex-column justify-content-center hero">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h2><strong>Warum ist Barrierefreiheit im Web so wichtig?</strong></h2> 
+        <p>Laut dem World Report on Disability der WHO haben weltweit 1 Milliarde Menschen Behinderungsprobleme und über 61 Millionen Erwachsene in den Vereinigten Staaten leben derzeit mit Behinderungen.</p>
+        <p>Indem Sie Ihre Website zugänglich machen, stellen Sie tatsächlich sicher, dass alle Ihre potenziellen Benutzer, nicht nur die Menschen mit Behinderungen, eine anständige Benutzererfahrung haben und leicht auf Ihre Informationen zugreifen können. </p> 
+        <p>Durch die Implementierung von Best Practices für Barrierefreiheit verbessern Sie auch die Benutzerfreundlichkeit der Website für alle Benutzer. (usability.gov)</p>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <div style="position: relative; left: 1000px; top: 20px; width: auto; height: 10%">
+              <h1>Für uns</h1>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="../assets/img/pyramid.png" alt="A reversed pyramid with its point on the bottom.">
+          </div>
+          <div class="col-3">
+            <div style="position: relative; left: -980px; top: 70px; width: auto; height: 10%">
+              <h2><strong>Für ältere Menschen</strong></h2>
+              <p>„Im Jahr 2019 betrug die Zahl der Menschen im Alter von 60 Jahren und älter 1 Milliarde. Diese Zahl wird bis 2030 auf 1,4 Milliarden und bis 2050 auf 2,1 Milliarden steigen.“
+                –WHO</p>
+            </div>
+            <div style="position: relative; left: 20px; top: 200px; width: auto; height: 10%">
+              <h2><strong>Für Menschen mit Behinderungen</strong></h2>
+              <p>„1,3 Milliarden Menschen – etwa 16 % der Weltbevölkerung“
+                –WHO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero -->
+  
+    <!-- ======= Hero Section - Why ======= -->
+    <section id="keynav" class="d-flex flex-column justify-content-center hero">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Tastaturnavigation</h1>
+      <p>Die Tastaturnavigation wurde für Personen entwickelt, die keine Maus oder andere Zeigegeräte verwenden können oder die nach Möglichkeit eine Tastatur verwenden möchten. </p> 
+      <p>Durch Drücken der Tab-Taste werden Sie zum nächsten Element auf der Website navigiert. Durch Drücken der Tastenkombination Tab + Shift gelangen Sie zum vorherigen Element auf der Website.</p>  
+      </div>
+    </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="color" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Farbkontrastverhältnis</h1>
+      <p>Für Menschen, die farbenblind oder schwach sind, bestimmen die Farbe und der Kontrast einer Website, ob sie Inhalte auf der Website sehen können oder nicht.
+      <p>Daher ist eine vernünftige Einstellung des Farbkontrasts sehr wichtig. Das empfohlene Farbkontrastverhältnis nach WCAG 2.1, Stufe AAA-Standard, liegt über 7,0 für kleinen Text und über 4,5 für großen Text.</p>
+      <p>Sie können auf die Schaltfläche unten klicken und einige kontrastreiche Farbkombinationen erleben oder das Farbkontrastverhältnis Ihrer eigenen Kombination unter herausfinden <a href="https://contrast-ratio.com/">Kontrastverhältnis-Website</a>.</p> 
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acColorSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          Farbkombination
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="subtitle" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Untertitel</h1>
+      <p>Bildunterschriften (in manchen Gegenden „Untertitel“ genannt) stellen Inhalte für gehörlose und schwerhörige Personen bereit.</p>
+      <p>Untertitel sind eine Textversion der Sprach- und Nicht-Sprach-Audioinformationen, die zum Verständnis des Inhalts benötigt werden.</p> 
+      <p>Sie werden mit dem Audio synchronisiert und normalerweise in einem Mediaplayer angezeigt, wenn Benutzer sie einschalten. (w3.org) </p> 
+      <p>Sie können auf die Schaltfläche unten klicken, um integrierte Untertitel zu aktivieren.</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acCCSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          Untertitel
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="fontsize" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Schriftgröße</h1>
+      <p>Die Größe und Dichte der Schriftarten kann frei angepasst werden, und verschiedene Größenzahnräder können je nach Zielbenutzer eingestellt werden. </p>
+      <p>Sie werden mit dem Audio synchronisiert und normalerweise in einem Mediaplayer angezeigt, wenn Benutzer sie einschalten. (w3.org) </p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acFontSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          Schriftgröße
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="cursor" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Gut sichtbarer Cursor</h1>
+      <p>Die Umformung der Maus kann dem Benutzer helfen, die Position der Maus auf der Seite genau zu lokalisieren, und die Möglichkeit von Schwindel und leichter Epilepsie, die durch den Verlust des Cursors verursacht werden, verringern.
+      <p>Klicken Sie auf die Schaltfläche unten, um den gut sichtbaren Cursor zu aktivieren.</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acCursorSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          Cursor-Stil
+        </button>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="party" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <p>Jetzt haben Sie einige grundlegende Elemente der Barrierefreiheit gelernt. Warum drücken Sie nicht die Schaltfläche unten und spielen mit den Funktionen herum?</p>
+      <div class="row justify-content-center">
+        <button type="button" name="button" class="btn btn-primary" onclick="acDisplaySwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          Barrierefreiheit
+        </button>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Entworfen von<a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+    <div>
+      <a href="#" class="d-flex align-items-center justify-content-center active"><i class="bx bx-globe"></i> <span>Deutsch</span></a>
+      <a href="../en/index.html" class="d-flex align-items-center justify-content-center"><i class="bx bx-globe"></i> <span>English</span></a>
+      <a href="../zh/index.html" class="d-flex align-items-center justify-content-center"><i class="bx bx-globe"></i> <span>中文（简体）</span></a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/jquery-3.6.0/jquery-3.6.0.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <!--24 Ways JS files-->
+  <script type="text/javascript" src="../include/js/schedule.js"></script>
+  <script type="text/javascript" src="../include/js/24Ways.js"></script>
+  <!--Accessibility Plug-in-->
+  <script src="../include/js/actool.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>无障碍网页</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body onload="acSwitchCheck();">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>欢迎</span></a></li>
+        <li><a href="#screenreading" class="nav-link scrollto"><i class="bx bx-user-voice"></i> <span>屏幕阅读</span></a></li>
+        <li><a href="#definition" class="nav-link scrollto"><i class="bx bx-universal-access"></i> <span>什么是无障碍</span></a></li>
+        <li><a href="#reason" class="nav-link scrollto"><i class="bx bx-question-mark"></i> <span>为什么无障碍</span></a></li>
+        <li><a href="#keynav" class="nav-link scrollto"><i class="bx bxs-keyboard"></i> <span>键盘指引</span></a></li>
+        <li><a href="#color" class="nav-link scrollto"><i class="bx bx-palette"></i> <span>颜色对比度</span></a></li>
+        <li><a href="#subtitle" class="nav-link scrollto"><i class="bx bx-captions"></i> <span>字幕</span></a></li>
+        <li><a href="#fontsize" class="nav-link scrollto"><i class="bx bx-font"></i> <span>字体大小</span></a></li>
+        <li><a href="#cursor" class="nav-link scrollto"><i class="bx bx-mouse"></i> <span>高可见度光标</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+    <div class="btn-toolbar d-flex justify-content-center fixed-top py-3 d-none" role="toolbar" id="actoolbar">
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acSkipSwitch()">
+          跳过导航栏
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acSpeakSwitch()">
+          语音开关
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acPbrSwitch()">
+          语音速度
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acModeSwitch()">
+          语音模式
+        </button>
+      </div>
+      <div class="btn-group me-2" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acColorSwitch()">
+          颜色
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acFontSwitch()">
+          字体大小
+        </button>
+        <button type="button" class="btn btn-outline-primary" onclick="acCCSwitch()">
+          字幕
+        </button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-outline-primary" onclick="acCursorSwitch()">
+          光标样式
+        </button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" name="button" class="btn btn-primary" onclick="acDisplaySwitch()">
+          无障碍
+        </button>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <div class="justify-content-center d-none bg-light fixed-bottom py-3" id="accc">
+    <p class="h2 text-center" id="cccontent"></p>
+  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>了解 “无障碍”</h1>
+      <p>你好。 欢迎来到学习 Web 可访问性的页面。 您可以使用键盘上的 TAB / Shift + TAB 或光标来浏览此页面。</p>
+      <p><span class="typed" data-typed-items="无障碍, 适老化, 屏幕阅读, 颜色对比度"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <!-- ======= Hero Section - Speak switch ======= -->
+  <section id="screenreading" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>屏幕阅读</h1>
+      <p>很抱歉用这个声音吓到你了，但你很快就会知道我为什么要看屏幕了。 </p>
+      <p>如果您觉得这很烦人，请单击下面的按钮关闭声音。</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acSpeakSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          语音开关
+        </button>
+      </div>
+      <p>或者，如果您觉得速度太慢，可以使用下面的按钮切换语音速度。</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acPbrSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          语音速度
+        </button>
+      </div>
+      <p>屏幕阅读功能基于文本到语音技术，阅读网站上关注的任何内容。</p>
+      <p>阅读部分的设计将直接影响用户使用网页的体验。 我们设计了一个特殊的阅读开关，帮助用户自由选择阅读的开始和结束。 </p>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section - Definition ======= -->
+  <section id="definition" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h2><strong>什么是无障碍？</strong></h2>
+      <p>在最狭义的定义中，无障碍是指产品、设备、服务、车辆或环境的设计，以供残障人士使用。 现在这是一个足够好的定义。</p> 
+      <p>在 Web 可访问性的利基市场中，我们有很多细节需要考虑。 在此网页中，我将向您介绍 Web 可访问性的一些最基本元素。 </p>
+    </div>
+  </section><!-- End Hero -->
+    <!-- ======= Hero Section - Definition ======= -->
+    <section id="reason" class="d-flex flex-column justify-content-center hero">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h2><strong>为什么网络可访问性如此重要？</strong></h2> 
+        <p>根据世界卫生组织提供的世界残疾报告，全世界有 10 亿人有残疾相关问题，美国目前有超过 6100 万成年人生活在残疾之下。</p>
+        <p>实际上，通过使您的网站易于访问，您可以确保所有潜在用户（不仅是残障人士）都拥有良好的用户体验，并且能够轻松访问您的信息。 </p> 
+        <p>通过实施可访问性最佳实践，您还可以提高网站对所有用户的可用性。(usability.gov) </p>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <div style="position: relative; left: 1000px; top: 20px; width: auto; height: 10%">
+              <h1>为了我们自己</h1>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="../assets/img/pyramid.png" alt="A reversed pyramid with its point on the bottom.">
+          </div>
+          <div class="col-3">
+            <div style="position: relative; left: -980px; top: 70px; width: auto; height: 10%">
+              <h2><strong>对于老年人</strong></h2>
+              <p>“2019年，60岁及以上人口数量为10亿。 这个数字到 2030 年将增加到 14 亿，到 2050 年将增加到 21 亿。”
+                –世界卫生组织</p>
+            </div>
+            <div style="position: relative; left: 20px; top: 200px; width: auto; height: 10%">
+              <h2><strong>对于残障人士</strong></h2>
+              <p>“13 亿人——约占全球人口的 16%”
+                –世界卫生组织</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero -->
+  
+    <!-- ======= Hero Section - Why ======= -->
+    <section id="keynav" class="d-flex flex-column justify-content-center hero">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>键盘导航</h1>
+      <p>键盘导航专为无法使用鼠标或其他指针设备或希望尽可能使用键盘的用户而设计。 </p> 
+      <p>通过按下 Tab 键，您将导航到网站上的下一个元素。 通过按下 Tab + Shift 组合键，您将导航到网站上的上一个元素。</p>  
+      </div>
+    </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="color" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>颜色对比度</h1>
+      <p>对于色盲或色弱的人来说，网站的颜色和对比度将决定他们能否看到网站上的内容。
+      <p>因此，合理调整色彩对比度非常重要。 WCAG 2.1推荐的色彩对比度，AAA级标准，小字7.0以上，大字4.5以上。</p>
+      <p>您可以点击下面的按钮体验一些高对比度的颜色组合，或者找出您自己的组合的颜色对比度 <a href="https://contrast-ratio.com/">对比度网站</a>.</p> 
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acColorSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          颜色组合
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="subtitle" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>字幕</h1>
+      <p>字幕（在某些地区称为“副标题”）为失聪和有听力障碍的人提供内容。 </p>
+      <p>字幕是理解内容所需的语音和非语音音频信息的文本版本。</p> 
+      <p>它们与音频同步，通常在用户打开它们时显示在媒体播放器中。(w3.org)</p> 
+      <p>您可以单击下面的按钮启用内置字幕。</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acCCSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          字幕
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="fontsize" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>字体大小</h1>
+      <p>字体大小和间距可自由调节，可根据不同目标用户设置不同大小档位。 </p>
+      <p>它们与音频同步，通常在用户打开它们时显示在媒体播放器中。(w3.org) </p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acFontSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          字体大小
+        </button>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="cursor" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>高可见度光标</h1>
+      <p>鼠标的重塑可以帮助用户精确定位鼠标在页面上的位置，减少因丢失光标而导致头晕和轻度癫痫的可能性。
+      <p>单击下面的按钮以启用高可见度光标。</p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-outline-primary" onclick="acCursorSwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          光标样式
+        </button>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="party" class="d-flex flex-column justify-content-center hero">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <p>现在您已经了解了无障碍的一些基本元素，为什么不按下下面的按钮并使用这些功能呢？</p>
+      <div class="row justify-content-center">
+        <button type="button" name="button" class="btn btn-primary" onclick="acDisplaySwitch()" style="width: 200px; height: auto; font-size: 30px;">
+          无障碍
+        </button>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        设计者 <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <div>
+        <a href="#" class="d-flex align-items-center justify-content-center active"><i class="bx bx-globe"></i> <span>中文（简体）</span></a>
+        <a href="../en/index.html" class="d-flex align-items-center justify-content-center"><i class="bx bx-globe"></i> <span>English</span></a>
+        <a href="../de/index.html" class="d-flex align-items-center justify-content-center"><i class="bx bx-globe"></i> <span>Deutsch</span></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/jquery-3.6.0/jquery-3.6.0.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <!--24 Ways JS files-->
+  <script type="text/javascript" src="../include/js/schedule.js"></script>
+  <script type="text/javascript" src="../include/js/24Ways.js"></script>
+  <!--Accessibility Plug-in-->
+  <script src="../include/js/actool.js"></script>
+
+</body>
+
+</html>
